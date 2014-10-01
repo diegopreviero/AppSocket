@@ -14,7 +14,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
-	//fff
+	
 	EditText textoSaida;
 	TextView textoEntrada;
 
