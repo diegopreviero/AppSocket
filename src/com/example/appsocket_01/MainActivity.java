@@ -40,7 +40,9 @@ public class MainActivity extends Activity {
 			DataInputStream dataInputStream = null;
 
 			try {
+
 				socket = new Socket("192.168.15.104", 8081);
+
 				
 				dataOutputStream = new DataOutputStream(socket.getOutputStream());
 				dataInputStream = new DataInputStream(socket.getInputStream());
@@ -52,7 +54,10 @@ public class MainActivity extends Activity {
 				e.printStackTrace();
 			} catch (IOException e) {
 				e.printStackTrace();
+
 			}/*finally{
+
+
 				if (socket != null){
 					try {
 						socket.close();
@@ -76,6 +81,8 @@ public class MainActivity extends Activity {
 						e.printStackTrace();
 					}
 				}
+
 			}*/
+
 		}};
 }
